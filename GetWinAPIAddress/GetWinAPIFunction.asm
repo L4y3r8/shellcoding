@@ -1,7 +1,7 @@
 global start
 
 ; custom shellcode to locate and call a arbitrary WinAPI-function in Kernel32.dll 
-; non-optimized but therefor comprehensible ^^
+; non-optimized but therefore comprehensible ^^
 
 section .text
 
