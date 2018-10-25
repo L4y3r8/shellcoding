@@ -9,7 +9,6 @@
 
 import binascii
 import random
-from termcolor import colored
 
 def header():
 	print("|-"+70*"-"+"-|")
