@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Return 32-bit asm code to push obfuscated NULL byte free string to stack
-# use XOR with random 32 bit key for 
+# use XOR with random 32 bit key as simple av evasion technique 
 
 # format info:
 # bin: '{:0>32b}'.format(int(a[0],16),'b')
