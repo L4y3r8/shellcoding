@@ -2,6 +2,17 @@ global start
 
 ; custom shellcode to locate and call a arbitrary WinAPI-function in Kernel32.dll 
 ; non-optimized but therefore comprehensible ^^
+; 
+; memory layout:
+; [ebp-0x04] = Base address Kernel32.dll
+; [ebp-0x08] = PE signature absolute address
+; [ebp-0x0C] = Export table absolute address
+; [ebp-0x10] = Number of exported functions
+; [ebp-0x14] = Export address table absolute address
+; [ebp-0x18] = Export name table absolute address
+; [ebp-0x1C] = Export ordinal table absolute address
+; [ebp-....] = Start function name
+; [ebp-....] = Start command to execute
 
 section .text
 
